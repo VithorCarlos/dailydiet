@@ -1,20 +1,19 @@
-Regras da aplicação:
-// uses --ext ts after command create migrate
+# About the projetct
+ - Api created in node.js to control all meals of the people
 
-[x] Deve ser possível criar um usuário
-[x] Deve ser possível identificar o usuário entre as requisições
-[x] Deve ser possível registrar uma refeição feita, com as seguintes informações:
-  [x] Nome
-  [x] Descrição
-  [x] Data e Hora
-  [x] Está dentro ou não da dieta
+# How to execute the app?
+Run the following command to start the app in development:
+`npm run dev`
 
-[x] Deve ser possível editar uma refeição, podendo alterar todos os dados acima
-[x] Deve ser possível apagar uma refeição
-[x] Deve ser possível listar todas as refeições de um usuário
-[x] Deve ser possível visualizar uma única refeição
-[x] Deve ser possível recuperar as métricas de um usuário: 
-  [x] Quantidade total de refeições registradas
-  [x] Quantidade total de refeições dentro da dieta
-  [x] Quantidade total de refeições fora da dieta
-[x] O usuário só pode visualizar, editar e apagar as refeições o qual ele criou   
+# How to use the application?
+Use `npm run migrate:up` to run all migrations
+Use `npm run migrate:down` to drop all migrations
+Use `npm rum migrate:make <migrationName> --ext ts` to create a new migration
+
+Call all rotes at: `http://localhost:3333 (or u preferred port. Config that on .env file`
+
+
+# How to test it with vitest?
+run: `npm test`
+
+
